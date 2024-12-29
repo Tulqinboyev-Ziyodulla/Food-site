@@ -5,14 +5,13 @@ interface Recipe {
   name: string;
   description: string;
   thumbnail: string;
-  images: string[]; // Rasmlar ro'yxati
+  images: string[];
 }
 
 const Home: React.FC = () => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Zaxira tasvirlar ro'yxati
   const placeholderImages = [
     'https://via.placeholder.com/150/FF0000/FFFFFF?text=Food+1',
     'https://via.placeholder.com/150/00FF00/FFFFFF?text=Food+2',
